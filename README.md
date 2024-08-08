@@ -13,3 +13,7 @@ FEATURES INVOLVED:
 - user can make an account
 - user can deposit said money into the account
 - user can withdraw money from the account
+
+TECH STACK USED:
+- frontend: reactjs, tailwind
+- backend: nodejs, expressjs, ethereum
