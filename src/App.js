@@ -1,23 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import HomePage from "./components/HomePage";
+import PiggyBank from './components/PiggyBank';
+import AccountButtons from './components/AcountButtons'
+import TransactionButtons from './components/TransactionButtons'; 
+import './index.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App" style={{ backgroundColor: '#ffe6e6'}}>
+      <HomePage/>
+  
+      <PiggyBank />
+      <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+        <TransactionButtons />
+        <AccountButtons />
+      </div>
     </div>
   );
 }
